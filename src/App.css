@@ -1,0 +1,620 @@
+:root{
+  --text-primary:#000;
+  --bgPrimary:#fff;
+ --bgSecondary: #F9F9F9;
+ --pink: #0071bd;
+ --light-blue: #e6f7ff;
+ --border: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+}
+
+a:hover{
+  color: var(--pink) !important;
+}
+
+#head-link{
+  color: #30379C;
+}
+.app{
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.crypto-coin-name, .what-is {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 34px;
+}
+.what-is {
+  font-size: 24px;
+  color: rgb(57, 13, 145);
+}
+.new-coin-details-heading {
+  font-size: 28px;
+  letter-spacing: 0.2px;
+  font-weight: lighter;
+}
+
+#get-started {
+  text-decoration:none;
+  color: white;
+}
+#get-started:hover {
+  color: whitesmoke;
+}
+.navbar, .nav-bar{
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  border-bottom: #000;
+  flex-wrap: wrap;
+  z-index: 999;
+}
+header{
+  display: flex;
+}
+header img{
+  width: 25px;
+  margin-top: -8px;
+}
+header h1{
+  font-size: 1.2em;
+  margin-left: 10px;
+  letter-spacing: 0.5px;
+}
+
+.custom-link{
+  /* background-color: red; */
+  margin-right: -240px;
+}
+#link{
+  margin-left: 50px;
+  font-size: 0.95em;
+  color: #000;
+  letter-spacing: 0.5px;
+}
+
+.homepage-design{
+  height: 400px;
+  /* background-color: rgb(61, 133, 241); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* width: 80%; */
+}
+
+.homepage-design h1{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 6.4em;
+  font-weight: bold;
+  color: #1A2B3B;
+}
+
+.homepage-design p{
+  margin-top: -25px;
+  font-size: 1.1em;
+}
+
+
+#btn, #btn-two{
+  width: 160px;
+  padding: 12px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+  background: #30379C;
+  color: white;
+  border: none;
+  /* border-radius: 30px; */
+  border: 1px solid #30379C;
+  letter-spacing: 0.5px;
+  outline: none;
+}
+
+#btn-two{
+  color: #30379C;
+  background: white;
+  border: 1px solid #30379C;
+}
+
+#btn:hover, #btn-two:hover{
+  background: #1A2B3B;
+  transition: background-color 0.2s ease-in-out;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+  } 
+  header h1{
+    margin-top: 50px;
+  }
+  header img {
+    margin-top: 45px;
+    margin-left: 30px;
+  }
+   .custom-link{
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+  #link{
+    margin-left: 38px;
+    letter-spacing: 0.2px;
+  }
+  .homepage-design {
+    height: 400px;
+  }
+  .homepage-design h1{
+    font-size: 3.4em;
+    margin-bottom: 50px;
+  }
+  .homepage-design p {
+    font-size: 1rem;
+  }
+   
+}
+
+.main{
+  /* flex: 0.8; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: #F0F2F5;  
+}
+.routes{
+  padding: 20px;
+  width: 1250px;
+}
+
+.vertical-line {
+  width: 100%;
+  height: 0.5px;
+  margin-top: 100px;
+  background: black;
+}
+.container{
+  /* background: red; */
+  margin-top: 80px;
+}
+
+.heading, .heading-1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2.5em;
+  color: #30379C;
+  font-weight: 550;
+}
+.heading-1 {
+  margin-top: 80px;
+}
+#show-more {
+  font-size: 1em;
+  margin-top: 80px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#show-more:hover {
+  color: #30379C;
+}
+#row-box, #row-box-1 {
+  height: 100px;
+  margin-top: 30px;
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+#row-box-1{
+  margin-left: 0px;
+}
+
+#row-box:hover, #row-box-1:hover{
+  transition: all 0.3s ease;
+  letter-spacing: 1.5px;
+}
+
+.search-box {
+  width: 585px;
+  height: 51px;
+  background-color: #fff;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 22px;
+}
+
+#input {
+  width: 450px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-left: 15px;
+  letter-spacing: 0.3px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.search-last-box {
+  width: 120px;
+  height: 35px;
+  border-radius: 17px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #30379C;
+  cursor: pointer;
+  transition: background-color 200ms linear;
+}
+.search-last-box h4{
+  color: white;
+  letter-spacing: 0.5px;
+  font-weight:100;
+}
+
+.search-last-box img {
+  width: 20px;
+}
+
+.search-box img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.search-last-box:hover{
+  background-color: #323bc7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-control-container{
+  display: none !important;
+  position: absolute !important;
+  right: 10px !important;
+  top: 25px !important;
+  font-size: 1.2rem !important;
+  background-color: var(--bgSecondary) !important;
+  border: none !important;
+}
+
+.loader{
+  height: 81vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:1300px){
+  .main{
+      margin-left: 50px;
+  }
+}
+
+@media screen and (max-width:1170px){
+  .main{
+      margin-left: 50px;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .main{
+      margin-left: 100px;
+  }
+}
+
+@media screen and (max-width:800px){
+  .app{
+      flex-direction: column;
+      overflow: hidden;
+  }
+
+  .navbar{
+      flex: 1;
+  }
+
+  .main{
+      flex: 1;
+      margin-top: 90px;
+      margin-left: 0px;
+      margin-right: 10px;
+  }
+
+  .nav-container{
+      height: 8vh;
+      position:fixed;
+      width: 100%;
+      z-index: 100;
+      background-color: var(--bgSecondary);
+  }
+
+  .menu-control-container{
+      display: block !important;
+  }
+
+  .ant-menu{
+      position: absolute;
+      right: 0px;
+  }
+  .home-title{
+      font-size: 1.4rem !important;
+  }
+  .show-more{
+      font-size: 1.3rem !important;
+  }
+}
+
+.coin-detail-container{
+  margin: 30px;
+}
+
+.coin-heading-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+.coin-heading-container .coin-name{
+  font-weight: 900;
+  color: var(--pink);
+}
+
+.coin-heading-container p{
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.stats-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.stats-container h2{
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: var(--pink);
+}
+
+.coin-details-heading{
+  font-weight: 700 !important;
+  margin-top: 20px !important;
+  color: var(--pink) !important;
+}
+
+.coin-stats{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  font-size: 1rem;
+  opacity: 0.9;
+  padding: 20px;
+
+}
+
+.coin-stats-name{
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.stats{
+  font-weight: 800;
+}
+
+.coin-value-statistics-heading p{
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.coin-desc-link{
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.coin-desc-link h2{
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.coin-desc-link p{
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.coin-desc-link a{
+  color: var(--pink);
+}
+
+.coin-desc-link h3{
+  font-weight: 700;
+}
+
+.coin-desc{
+  flex: 0.5;
+}
+
+.coin-links{
+padding: 0px 20px;
+  flex: 0.5;
+}
+
+.coin-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding: 20px;
+}
+
+.link-name{
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.coin-link a{
+  color: var(--pink);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.coin-link:hover, .coin-stats:hover{
+  background-color: var(--bgSecondary);
+}
+
+@media screen and (max-width:1000px){
+  .stats-container{
+      flex-direction: column;
+  }
+  .coin-desc-link{
+      flex-direction: column;
+  }
+  .stats-container h2{
+      margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .coin-links{
+      padding: 0px;
+  }
+  .coin-detail-container{
+      margin: 0;
+  }
+}
+@media screen and (max-width: 500px){
+  .heading{
+      margin-top: 20px;
+  }
+}
+
+.select-news{
+  width: 180px;
+}
+.news-card{
+  min-height: 280px !important;
+}
+.news-image-container{
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.news-title{
+width: 70%;
+}
+
+.news-image-container .img{
+  width:100px;
+  height:100px;
+}
+.news-card p{
+  color: black;
+  margin: 10px 0px !important;
+}
+.provider-container{
+  display: flex;
+  justify-content: space-between;
+}
+.provider-name{
+  margin-left: 10px;
+}
+
+.chart-header{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  color: #0071bd;
+}
+.chart-title{
+  color: #0071bd !important;
+}
+.price-container{
+  display: flex !important;
+  gap: 20px !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+}
+.price-change{
+  font-weight: 900 !important;
+}
+.current-price{
+  margin-top: 0px !important;
+  font-weight: 900 !important;
+}
+.home-heading-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.show-more{
+  margin-top: 0px !important;
+}
+.exchange-image{
+  margin: 0px 10px !important;
+}
+.search-crypto{
+  margin: 20px auto 30px auto;
+  width: 250px;
+}
+.crypto-card-container{
+  min-height: 65vh !important;
+}
+.crypto-card{
+  min-width: 250px;
+}
+.crypto-card .crypto-image{
+  width:35px;
+}
+.select-timeperiod{
+  width: 200px !important;
+  margin-top: 20px !important;
+}
+
+.footer {
+  background-color: #001529;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+}
